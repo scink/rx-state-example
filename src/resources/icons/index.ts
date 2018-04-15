@@ -1,0 +1,10 @@
+export {default as iconCalendar} from './calendar.svg';
+export {default as iconInternet} from './internet.svg';
+export {default as iconLike} from './like.svg';
+export {default as iconNetwork} from './network.svg';
+export {default as iconPlaceholder} from './placeholder.svg';
+export {default as iconPlayButton} from './play-button.svg';
+export {default as iconSearch} from './search.svg';
+export {default as iconSmartphone} from './smartphone.svg';
+export {default as iconSuccess} from './success.svg';
+export {default as iconUser} from './user.svg';

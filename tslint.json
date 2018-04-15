@@ -1,0 +1,147 @@
+{
+  "compilerOptions": {
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "max-line-length": [true, 140],
+    "no-consecutive-blank-lines": [true, 2],
+    "no-any": true,
+    "no-empty-interface": true,
+    "no-unnecessary-type-assertion": true,
+    "no-var-keyword": true,
+    "no-duplicate-variable": true,
+    "no-unused-variable": true,
+    "prefer-for-of": true,
+    "curly": true,
+    "no-arg": true,
+    "no-console": [true, "log"],
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-super": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-floating-promises": true,
+    "no-for-in-array": true,
+    "no-inferred-empty-object-type": true,
+    "no-invalid-template-strings": true,
+    "no-invalid-this": true,
+    "no-misused-new": true,
+    "no-null-keyword": false,
+    "no-object-literal-type-assertion": true,
+    "no-shadowed-variable": true,
+    "no-sparse-arrays": true,
+    "no-string-literal": true,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-unbound-method": true,
+    "no-unsafe-finally": true,
+    "no-unused-expression": false,
+    "no-use-before-declare": true,
+    "no-void-expression": true,
+    "prefer-conditional-expression": true,
+    "radix": true,
+    "restrict-plus-operands": true,
+    "strict-boolean-expressions": true,
+    "strict-type-predicates": true,
+    "switch-default": false,
+    "triple-equals": true,
+    "use-default-type-parameter": true,
+    "use-isnan": true,
+    "deprecation": true,
+    "indent": [true, "tabs"],
+    "max-classes-per-file": [
+      true,
+      1
+    ],
+    "no-default-export": true,
+    "no-require-imports": true,
+    "object-literal-sort-keys": false,
+    "prefer-const": true,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ],
+    "array-type": [
+      true,
+      "array-simple"
+    ],
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
+    "arrow-return-shorthand": [
+      true,
+      "multiline"
+    ],
+    "callable-types": true,
+    "class-name": true,
+    "comment-format": [
+      true,
+      "check-space",
+      "check-lowercase",
+      {
+        "ignore-words": [
+          "TODO",
+          "FIXME"
+        ]
+      }
+    ],
+    "encoding": true,
+    "import-spacing": true,
+    "interface-name": true,
+    "interface-over-type-literal": false,
+    "newline-before-return": false,
+    "no-boolean-literal-compare": true,
+    "no-irregular-whitespace": true,
+    "no-reference-import": true,
+    "no-trailing-whitespace": true,
+    "no-unnecessary-callback-wrapper": true,
+    "no-unnecessary-initializer": true,
+    "no-unnecessary-qualifier": true,
+    "object-literal-shorthand": true,
+    "one-line": true,
+    "one-variable-per-declaration": true,
+    "ordered-imports": false,
+    "prefer-function-over-method": false,
+    "prefer-switch": true,
+    "prefer-template": true,
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "return-undefined": true,
+    "space-before-function-paren": [
+      true,
+      "never"
+    ],
+    "space-within-parens": [true, 0],
+    "switch-final-break": true,
+    "type-literal-delimiter": false,
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "ban-keywords",
+      "allow-pascal-case"
+    ],
+    "whitespace": true,
+    "eofline": false,
+    "no-namespace": false,
+    "member-ordering": false,
+    "member-access": false
+  },
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ]
+}
