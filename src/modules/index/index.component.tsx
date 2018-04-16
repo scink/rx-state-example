@@ -6,7 +6,15 @@ export class Index extends Component<{}> {
 	public render() {
 		return (
 			<>
-				<Link to={'/redux-example'}>react-example</Link>
+				<div>
+					<Link to={'/redux-example'}>redux-example</Link>
+				</div>
+				<div>
+					<Link to={'/first-rx'}>first-rx</Link>
+				</div>
+				<div>
+					<Link to={'/rx-example'}>rx-example</Link>
+				</div>
 			</>
 		);
 	}

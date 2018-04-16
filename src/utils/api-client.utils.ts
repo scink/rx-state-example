@@ -25,7 +25,7 @@ export class ApiClient {
 		const url = `${this.baseHref}${request.url}`;
 
 		return ajax({
-			withCredentials: true,
+			withCredentials: false, // TODO
 			responseType: 'json',
 			headers: {
 				'Content-Type': 'application/json; charset=UTF-8',
