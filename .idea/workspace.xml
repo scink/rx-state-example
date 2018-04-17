@@ -1,30 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab58235a-1c78-4fb5-808d-1f77bc609152" name="Default" comment="the template for redux example is ready">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/first-rx/first-rx.component.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/first-rx/first-rx.container.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/index/index.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/redux-example/redux-example.container.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/render-remote-data/index.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/render-remote-data/render-remote-data.pure.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/tatooine/index.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/tatooine/tatooine.component.tsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/modules/tatooine/tatooine.container.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/services/first-rx.service.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/services/index.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/services/tatooine.service.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/index.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/utils/tatooine.utils.ts" />
+    <list default="true" id="ab58235a-1c78-4fb5-808d-1f77bc609152" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/actions/redux-example.actions.ts" afterPath="$PROJECT_DIR$/src/actions/redux-example.actions.ts" />
-      <change beforePath="$PROJECT_DIR$/src/models/index.ts" afterPath="$PROJECT_DIR$/src/modules/first-rx/index.ts" />
       <change beforePath="$PROJECT_DIR$/src/modules/index.ts" afterPath="$PROJECT_DIR$/src/modules/index.ts" />
-      <change beforePath="$PROJECT_DIR$/src/modules/index/index.component.tsx" afterPath="$PROJECT_DIR$/src/modules/index/index.component.tsx" />
-      <change beforePath="$PROJECT_DIR$/src/modules/root/root.component.tsx" afterPath="$PROJECT_DIR$/src/modules/root/root.component.tsx" />
       <change beforePath="$PROJECT_DIR$/src/reducers/index.ts" afterPath="$PROJECT_DIR$/src/reducers/index.ts" />
-      <change beforePath="$PROJECT_DIR$/src/utils/api-client.utils.ts" afterPath="$PROJECT_DIR$/src/utils/api-client.utils.ts" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" afterPath="$PROJECT_DIR$/tslint.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,26 +18,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="first-rx.container.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modules/first-rx/first-rx.container.tsx">
+      <file leaf-file-name="index.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/reducers/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="first-rx.component.tsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modules/first-rx/first-rx.component.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,8 +35,8 @@
       <list>
         <option value="React Style" />
         <option value="React Container" />
-        <option value="React Component" />
         <option value="React Pure Component" />
+        <option value="React Component" />
       </list>
     </option>
   </component>
@@ -82,6 +48,8 @@
       <find>vers</find>
       <find>successes</find>
       <find>prett</find>
+      <find>null</find>
+      <find>console</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -125,19 +93,20 @@
         <option value="$PROJECT_DIR$/src/modules/tatooine/tatooine.component.tsx" />
         <option value="$PROJECT_DIR$/src/utils/index.ts" />
         <option value="$PROJECT_DIR$/src/modules/tatooine/tatooine.container.ts" />
-        <option value="$PROJECT_DIR$/src/services/tatooine.service.ts" />
         <option value="$PROJECT_DIR$/src/services/index.ts" />
-        <option value="$PROJECT_DIR$/src/services/first-rx.service.ts" />
         <option value="$PROJECT_DIR$/src/modules/first-rx/first-rx.container.pure.tsx" />
         <option value="$PROJECT_DIR$/src/modules/first-rx/index.ts" />
         <option value="$PROJECT_DIR$/src/modules/index/index.component.tsx" />
         <option value="$PROJECT_DIR$/src/modules/index/index.ts" />
-        <option value="$PROJECT_DIR$/src/modules/index.ts" />
-        <option value="$PROJECT_DIR$/src/reducers/index.ts" />
         <option value="$PROJECT_DIR$/src/actions/redux-example.actions.ts" />
         <option value="$PROJECT_DIR$/src/modules/root/root.component.tsx" />
         <option value="$PROJECT_DIR$/src/modules/first-rx/first-rx.container.tsx" />
         <option value="$PROJECT_DIR$/src/modules/first-rx/first-rx.component.tsx" />
+        <option value="$PROJECT_DIR$/src/services/first-rx.service.ts" />
+        <option value="$PROJECT_DIR$/src/services/tatooine.service.ts" />
+        <option value="$PROJECT_DIR$/src/modules/sidebar/sidebar.component.tsx" />
+        <option value="$PROJECT_DIR$/src/modules/index.ts" />
+        <option value="$PROJECT_DIR$/src/reducers/index.ts" />
       </list>
     </option>
   </component>
@@ -231,33 +200,7 @@
               <item name="rx-state-example" type="b2602c69:ProjectViewProjectNode" />
               <item name="rx-state-example" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="first-rx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rx-state-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rx-state-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="root" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rx-state-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rx-state-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rx-state-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rx-state-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rx-state-example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rx-state-example" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,7 +273,7 @@
       <option name="presentableId" value="Default" />
       <updated>1523524948347</updated>
       <workItem from="1523524949835" duration="1899000" />
-      <workItem from="1523654628280" duration="31692000" />
+      <workItem from="1523654628280" duration="36107000" />
     </task>
     <task id="LOCAL-00001" summary="the template for redux example is ready">
       <created>1523819873757</created>
@@ -339,11 +282,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523819873758</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adds example for rx">
+      <created>1523905382109</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523905382109</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33591000" />
+    <option name="totallyTimeSpent" value="38006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -352,12 +302,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24004085" sideWeight="0.4978903" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21144025" sideWeight="0.48583484" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18998979" sideWeight="0.4954792" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22845088" sideWeight="0.30699483" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21144025" sideWeight="0.51416516" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2083759" sideWeight="0.48583484" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16751787" sideWeight="0.4930681" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22845088" sideWeight="0.30674848" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16751787" sideWeight="0.5069319" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2124617" sideWeight="0.4930681" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22845088" sideWeight="0.6930052" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22845088" sideWeight="0.69325155" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.4978903" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -379,29 +329,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="the template for redux example is ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="the template for redux example is ready" />
+    <MESSAGE value="adds example for rx" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds example for rx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sagas/redux-example.saga.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/polyfills.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/react-redux/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -579,7 +514,7 @@
         <state relative-caret-position="180">
           <caret line="17" column="66" lean-forward="false" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,7 +572,7 @@
         <state relative-caret-position="60">
           <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="29" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -674,28 +609,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/tatooine.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/rxjs/src/observable/dom/AjaxObservable.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/api-client.utils.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -713,16 +630,6 @@
         <state relative-caret-position="249">
           <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/first-rx.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,26 +657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/index/index.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -787,28 +678,80 @@
         <state relative-caret-position="315">
           <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/first-rx/first-rx.container.tsx">
+    <entry file="file://$PROJECT_DIR$/src/services/first-rx.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="21" column="121" lean-forward="false" selection-start-line="21" selection-start-column="121" selection-end-line="21" selection-end-column="121" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/first-rx/first-rx.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="585">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/first-rx/first-rx.container.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/rxjs/src/operator/startWith.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/api-client.utils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/tatooine.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="53" column="94" lean-forward="false" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/sidebar/sidebar.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="12" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
