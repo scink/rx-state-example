@@ -1,26 +1,24 @@
 import * as React from 'react';
 import {PureComponent} from 'react';
-import Search from 'antd/lib/input/Search';
 
-export type TReduxExampleProps = {};
-export type TReduxExampleState = {};
+export type TReduxExampleData = {
+	payload: string[];
+	isPending: boolean;
+};
 
-export class ReduxExample extends PureComponent<TReduxExampleProps, TReduxExampleState> {
-	public readonly state: TReduxExampleState = {};
+export type TReduxExampleProps = {
+	data: TReduxExampleData;
+	onRequestData: () => void;
+};
 
-	public render() {
-		const {} = this.props;
-		const {} = this.state;
-
-		return (
-			<section>
-				<Search placeholder={'id'} enterButton={'load'} onSearch={this.handleSearch} />
-			</section>
-		);
+export class ReduxExample extends PureComponent<TReduxExampleProps> {
+	componentDidMount() {
+		this.props.onRequestData();
 	}
 
-	handleSearch = (id: string) => {
-		console.log(id);
-		// dispatch
-	};
+	public render() {
+		const {data} = this.props;
+
+		return <>{data.payload.map((item, i) => <div key={i}>{item}</div>)}</>;
+	}
 }

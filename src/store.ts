@@ -1,9 +1,8 @@
 import createBrowserHistory from 'history/createBrowserHistory';
 import {applyMiddleware, compose, createStore} from 'redux';
 import {routerMiddleware} from 'react-router-redux';
-import {rootReducer, TRootState} from './reducers';
+import {REDUX_EXAMPLE_INITIAL_STATE, rootReducer, TRootState} from './reducers';
 import sagaMiddlewareFactory from 'redux-saga';
-import {REDUX_EXAMPLE_INITIAL_STATE} from './reducers/redux-example.reducer';
 
 export const history = createBrowserHistory({
 	basename: process.env.BASE_HREF,

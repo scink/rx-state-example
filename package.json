@@ -7,7 +7,6 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prettier": "prettier --list-different \"./src/**/*.{ts,tsx,js,jsx,json}\"",
 		"prettier:fix": "prettier --list-different --write \"./src/**/*.{ts,tsx,js,jsx,json}\"",
-		"start1": "node ./config/scripts/run.js ./config/scripts/start.js -- --mode development",
 		"start": "webpack-dev-server --config ./config/build/dev.js --mode development",
 		"build": "node ./config/scripts/run.js ./config/scripts/start.js --mode production",
 		"storybook": "node ./config/scripts/run.js ./config/scripts/storybook.js"

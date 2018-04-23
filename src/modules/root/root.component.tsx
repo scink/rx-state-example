@@ -2,7 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import {Route, RouteComponentProps, Switch} from 'react-router';
 import {css} from 'emotion';
-import {Index, TatooineContainer, FirstRxContainer, ReduxExample} from '../';
+import {Index, TatooineContainer, FirstRxContainer, ReduxExampleContainer} from '../';
 
 const RootStyle = css({
 	width: '100%',
@@ -18,7 +18,7 @@ export class Root extends Component<RouteComponentProps<{}>> {
 			<section className={RootStyle}>
 				<Switch>
 					<Route exact path={'/'} component={Index} />
-					<Route path={'/redux-example'} component={ReduxExample} />
+					<Route path={'/redux-example'} component={ReduxExampleContainer} />
 					<Route path={'/rx-example'} component={TatooineContainer} />
 					<Route path={'/first-rx'} component={FirstRxContainer} />
 				</Switch>

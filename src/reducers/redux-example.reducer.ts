@@ -1,14 +1,14 @@
 import {AnyAction} from 'redux';
-import {REDUX_EXAMPLE_ON_REQUEST_DATA, TReduxExampleAction} from '../actions';
+import {REDUX_EXAMPLE_ON_REQUEST_DATA, REDUX_EXAMPLE_ON_SUCCESS_DATA, TReduxExampleAction} from '../actions';
 
 export type TReduxExampleState = {
-	selectedId: string;
-	payload: any[];
+	payload: string[];
+	isPending: boolean;
 };
 
 export const REDUX_EXAMPLE_INITIAL_STATE: TReduxExampleState = {
-	selectedId: '',
-	payload: [],
+	payload: ['string0', 'string1', 'string2', 'string3', 'string4'],
+	isPending: false,
 };
 
 export const reduxExampleReducer = (
@@ -19,11 +19,19 @@ export const reduxExampleReducer = (
 
 	switch (action.type) {
 		case REDUX_EXAMPLE_ON_REQUEST_DATA: {
-			const {id} = action.payload;
+			return {
+				...state,
+				isPending: true,
+			};
+		}
+
+		case REDUX_EXAMPLE_ON_SUCCESS_DATA: {
+			const {payload} = action;
 
 			return {
 				...state,
-				selectedId: id,
+				isPending: false,
+				payload,
 			};
 		}
 
