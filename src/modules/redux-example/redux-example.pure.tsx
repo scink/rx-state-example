@@ -2,7 +2,7 @@ import * as React from 'react';
 import {PureComponent} from 'react';
 
 export type TReduxExampleData = {
-	payload: string[];
+	payload: any[];
 	isPending: boolean;
 };
 
@@ -18,7 +18,6 @@ export class ReduxExample extends PureComponent<TReduxExampleProps> {
 
 	public render() {
 		const {data} = this.props;
-
-		return <>{data.payload.map((item, i) => <div key={i}>{item}</div>)}</>;
+		return <>{data.payload.map((item, i) => <div key={i}>{item.name}</div>)}</>;
 	}
 }

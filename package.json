@@ -36,6 +36,7 @@
 		"@types/webpack-env": "^1.13.3",
 		"antd": "^3.4.1",
 		"autoprefixer": "^7.2.3",
+		"axios": "^0.18.0",
 		"babel-loader": "^7.1.2",
 		"babel-plugin-emotion": "^8.0.12",
 		"babel-register": "^6.26.0",
