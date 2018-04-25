@@ -1,8 +1,8 @@
-import {TResident} from '../services';
 import {TTatooineResident} from '../modules';
+import {TCharacter} from '../models';
 
 export namespace TatooineUtils {
-	export const toUiResident = (resident: TResident): TTatooineResident => ({
+	export const toUiResident = (resident: TCharacter): TTatooineResident => ({
 		name: resident.name,
 		height: resident.height,
 		hairColor: resident.hair_color,

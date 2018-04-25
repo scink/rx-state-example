@@ -1,20 +1,21 @@
-import axios from 'axios';
 import {call, put, takeEvery} from 'redux-saga/effects';
-import {getPersonAPI, getPlanetAPI} from '../api/api';
-import {
-	reduxExampleOnSuccessDataAction,
-	REDUX_EXAMPLE_ON_REQUEST_DATA,
-	TReduxExampleOnRequestDataAction,
-	reduxExampleOnErrorDataAction,
-} from '../actions';
+import {reduxExampleOnSuccessDataAction, REDUX_EXAMPLE_ON_REQUEST_DATA, reduxExampleOnErrorDataAction} from '../actions';
+import {ReduxExapmleService} from '../services';
+import getPlanet = ReduxExapmleService.getPlanet;
+import getPerson = ReduxExapmleService.getPerson;
 
-function* handleReduxExampleRequest(action: TReduxExampleOnRequestDataAction) {
+function* handleReduxExampleRequest() {
 	try {
-		const result = yield call(getPlanetAPI, '1');
-		const {residents} = result;
-		const requestRersidents = residents.map((resident: string) => call(getPersonAPI, resident));
-		const persons = yield requestRersidents;
-		yield put(reduxExampleOnSuccessDataAction(persons));
+		const result = yield call(getPlanet, '1');
+		const {residents: persons} = result;
+		const requestRersidents = persons.map((person: string) => call(getPerson, person));
+		const residents = yield requestRersidents;
+		yield put(
+			reduxExampleOnSuccessDataAction({
+				...result,
+				residents,
+			}),
+		);
 	} catch (error) {
 		yield put(reduxExampleOnErrorDataAction(error));
 	}

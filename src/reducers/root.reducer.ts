@@ -1,6 +1,6 @@
-import {routerReducer as router, RouterState} from 'react-router-redux';
 import {combineReducers, Reducer} from 'redux';
-import {reduxExampleReducer as reduxExample, TReduxExampleState} from './redux-example.reducer';
+import {reduxExampleReducer, TReduxExampleState} from './redux-example.reducer';
+import {routerReducer, RouterState} from 'react-router-redux';
 
 export type TRootState = {
 	router: RouterState;
@@ -8,6 +8,6 @@ export type TRootState = {
 };
 
 export const rootReducer: Reducer<TRootState> = combineReducers<TRootState>({
-	router,
-	reduxExample,
-} as any);
+	router: routerReducer as Reducer<RouterState>,
+	reduxExample: reduxExampleReducer,
+});

@@ -1,3 +1,5 @@
+import {TCharacter, TPlanet} from '../models';
+
 export const REDUX_EXAMPLE_ON_REQUEST_DATA = 'REDUX_EXAMPLE_ON_REQUEST_DATA';
 export type TReduxExampleOnRequestDataAction = {
 	type: typeof REDUX_EXAMPLE_ON_REQUEST_DATA;
@@ -7,9 +9,9 @@ export const reduxExampleOnRequestAction = (): TReduxExampleOnRequestDataAction 
 export const REDUX_EXAMPLE_ON_SUCCESS_DATA = 'REDUX_EXAMPLE_ON_SUCCESS_DATA';
 export type TReduxExampleOnSuccessDataAction = {
 	type: typeof REDUX_EXAMPLE_ON_SUCCESS_DATA;
-	payload: string[];
+	payload: TPlanet<TCharacter>;
 };
-export const reduxExampleOnSuccessDataAction = (payload: string[]): TReduxExampleOnSuccessDataAction => ({
+export const reduxExampleOnSuccessDataAction = (payload: TPlanet<TCharacter>): TReduxExampleOnSuccessDataAction => ({
 	type: REDUX_EXAMPLE_ON_SUCCESS_DATA,
 	payload,
 });

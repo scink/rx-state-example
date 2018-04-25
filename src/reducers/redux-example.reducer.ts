@@ -1,14 +1,30 @@
 import {AnyAction} from 'redux';
 import {REDUX_EXAMPLE_ON_ERROR_DATA, REDUX_EXAMPLE_ON_REQUEST_DATA, REDUX_EXAMPLE_ON_SUCCESS_DATA, TReduxExampleAction} from '../actions';
+import {TCharacter, TPlanet} from '../models';
 
 export type TReduxExampleState = {
-	payload: any[];
-	error?: string | null;
+	payload: TPlanet<TCharacter>;
+	error: Error | null;
 	isPending: boolean;
 };
 
 export const REDUX_EXAMPLE_INITIAL_STATE: TReduxExampleState = {
-	payload: [],
+	payload: {
+		name: '',
+		rotation_period: '',
+		orbital_period: '',
+		diameter: '',
+		climate: '',
+		gravity: '',
+		terrain: '',
+		surface_water: '',
+		population: '',
+		residents: [],
+		films: [],
+		created: '',
+		edited: '',
+		url: '',
+	},
 	error: null,
 	isPending: false,
 };
@@ -24,6 +40,7 @@ export const reduxExampleReducer = (
 			return {
 				...state,
 				isPending: true,
+				error: null,
 			};
 		}
 
@@ -34,6 +51,7 @@ export const reduxExampleReducer = (
 				...state,
 				isPending: false,
 				payload,
+				error: null,
 			};
 		}
 
@@ -43,7 +61,7 @@ export const reduxExampleReducer = (
 			return {
 				...state,
 				isPending: false,
-				error: error.message,
+				error,
 			};
 		}
 
