@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import {TRootState} from '../../reducers';
-import {ReduxExample} from './redux-example.pure';
+import {ReduxExample} from './';
 import {Dispatch} from 'redux';
 import {reduxExampleOnRequestAction} from '../../actions';
 
