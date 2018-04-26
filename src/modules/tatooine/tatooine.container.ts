@@ -1,13 +1,14 @@
 import {compose} from 'fp-ts/lib/function';
 import {initial} from '@devexperts/remote-data-ts';
-import {withDefaults, withRX, WithRXSelector} from '../';
-import {Tatooine, TTatooineProps} from './';
 import {merge} from 'rxjs/observable/merge';
+import {combineLatest} from 'rxjs/observable/combineLatest';
+import {withDefaults} from '../HOCs/with-defaults.hoc';
+import {Tatooine, TTatooineProps} from './tatooine.component';
+import {withRX, WithRXSelector} from '../HOCs/with-rx.hoc';
+import {TatooineService} from '../../services/tatooine.service';
 import getTatooine = TatooineService.getTatooine;
 import getResidents = TatooineService.getResidents;
-import {TatooineService} from '../../services';
-import {combineLatest} from 'rxjs/observable/combineLatest';
-import {TatooineUtils} from '../../utils';
+import {TatooineUtils} from '../../utils/tatooine.utils';
 import toUiResident = TatooineUtils.toUiResident;
 
 type Default = 'data';

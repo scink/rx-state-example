@@ -2,9 +2,9 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import './utils/rx.utils';
 import 'normalize.css';
-import {RootContainer} from './modules/root';
 import {store, history} from './store';
 import 'antd/dist/antd.css';
+import {RootContainer} from './modules/root/root.container';
 
 const root = document.getElementById('root');
 

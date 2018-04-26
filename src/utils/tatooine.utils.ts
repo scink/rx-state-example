@@ -1,5 +1,5 @@
-import {TTatooineResident} from '../modules';
-import {TCharacter} from '../models';
+import {TCharacter} from '../models/star-wars-api.models';
+import {TTatooineResident} from '../modules/tatooine/tatooine.component';
 
 export namespace TatooineUtils {
 	export const toUiResident = (resident: TCharacter): TTatooineResident => ({

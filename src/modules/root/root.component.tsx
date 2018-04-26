@@ -2,7 +2,10 @@ import React from 'react';
 import {Component} from 'react';
 import {Route, RouteComponentProps, Switch} from 'react-router';
 import {css} from 'emotion';
-import {Index, TatooineContainer, FirstRxContainer, ReduxExampleContainer} from '../';
+import {Index} from '../index/index.component';
+import {ReduxExampleContainer} from '../redux-example/redux-example.container';
+import {TatooineContainer} from '../tatooine/tatooine.container';
+import {FirstRxContainer} from '../first-rx/first-rx.container';
 
 const RootStyle = css({
 	width: '100%',

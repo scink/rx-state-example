@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {RemoteData} from '@devexperts/remote-data-ts';
-import {ComponentClass, ReactElement} from 'react';
+import {ReactElement} from 'react';
 import {constant} from 'fp-ts/lib/function';
 import Spin from 'antd/lib/spin';
 import Icon from 'antd/lib/icon';

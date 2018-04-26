@@ -1,4 +1,4 @@
-import {TCharacter, TPlanet} from '../models';
+import {TCharacter, TPlanet} from '../models/star-wars-api.models';
 
 export const REDUX_EXAMPLE_ON_REQUEST_DATA = 'REDUX_EXAMPLE_ON_REQUEST_DATA';
 export type TReduxExampleOnRequestDataAction = {
@@ -16,19 +16,4 @@ export const reduxExampleOnSuccessDataAction = (payload: TPlanet<TCharacter>): T
 	payload,
 });
 
-export const REDUX_EXAMPLE_ON_ERROR_DATA = 'REDUX_EXAMPLE_ON_ERROR_DATA';
-export type TReduxExampleOnErrorDataAction = {
-	type: typeof REDUX_EXAMPLE_ON_ERROR_DATA;
-	payload: {
-		error: Error;
-	};
-};
-
-export const reduxExampleOnErrorDataAction = (error: Error): TReduxExampleOnErrorDataAction => ({
-	type: REDUX_EXAMPLE_ON_ERROR_DATA,
-	payload: {
-		error,
-	},
-});
-
-export type TReduxExampleAction = TReduxExampleOnRequestDataAction | TReduxExampleOnSuccessDataAction | TReduxExampleOnErrorDataAction;
+export type TReduxExampleAction = TReduxExampleOnRequestDataAction | TReduxExampleOnSuccessDataAction;

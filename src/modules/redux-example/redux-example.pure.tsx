@@ -4,7 +4,6 @@ import {TCharacter, TPlanet} from '../../models';
 
 export type TReduxExampleData = {
 	payload: TPlanet<TCharacter>;
-	error: Error;
 	isPending: boolean;
 };
 
@@ -20,9 +19,6 @@ export class ReduxExample extends PureComponent<TReduxExampleProps> {
 
 	public render() {
 		const {data} = this.props;
-		if (data.error) {
-			return <span>{data.error.message}</span>;
-		}
 		return (
 			<>
 				<h2>Planet: {data.payload.name}</h2>

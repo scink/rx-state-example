@@ -1,10 +1,9 @@
 import {AnyAction} from 'redux';
-import {REDUX_EXAMPLE_ON_ERROR_DATA, REDUX_EXAMPLE_ON_REQUEST_DATA, REDUX_EXAMPLE_ON_SUCCESS_DATA, TReduxExampleAction} from '../actions';
-import {TCharacter, TPlanet} from '../models';
+import {TCharacter, TPlanet} from '../models/star-wars-api.models';
+import {REDUX_EXAMPLE_ON_REQUEST_DATA, REDUX_EXAMPLE_ON_SUCCESS_DATA, TReduxExampleAction} from '../actions/redux-example.actions';
 
 export type TReduxExampleState = {
 	payload: TPlanet<TCharacter>;
-	error: Error | null;
 	isPending: boolean;
 };
 
@@ -25,7 +24,6 @@ export const REDUX_EXAMPLE_INITIAL_STATE: TReduxExampleState = {
 		edited: '',
 		url: '',
 	},
-	error: null,
 	isPending: false,
 };
 
@@ -40,7 +38,6 @@ export const reduxExampleReducer = (
 			return {
 				...state,
 				isPending: true,
-				error: null,
 			};
 		}
 
@@ -51,17 +48,6 @@ export const reduxExampleReducer = (
 				...state,
 				isPending: false,
 				payload,
-				error: null,
-			};
-		}
-
-		case REDUX_EXAMPLE_ON_ERROR_DATA: {
-			const {payload: {error}} = action;
-
-			return {
-				...state,
-				isPending: false,
-				error,
 			};
 		}
 

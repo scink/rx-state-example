@@ -4,7 +4,7 @@ import Row from 'antd/lib/grid/row';
 import Col from 'antd/lib/grid/col';
 import {RemoteData} from '@devexperts/remote-data-ts';
 import Card from 'antd/lib/card';
-import {renderRemoteData} from '../';
+import {renderRemoteData} from '../render-remote-data/render-remote-data.pure';
 
 export type TTatooineResident = {
 	name: string;

@@ -1,9 +1,9 @@
-import {ApiClient} from '../utils';
 import {combineLatest} from 'rxjs/observable/combineLatest';
 import {RemoteData, success} from '@devexperts/remote-data-ts';
 import {Observable} from 'rxjs/Observable';
 import {uuid} from '@devexperts/utils/dist/string';
-import {TCharacter, TPlanet} from '../models';
+import {ApiClient} from '../utils/api-client.utils';
+import {TCharacter, TPlanet} from '../models/star-wars-api.models';
 
 export namespace TatooineService {
 	const api = ApiClient.create('https://swapi.co/api/');
