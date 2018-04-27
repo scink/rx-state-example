@@ -2,10 +2,7 @@ import {AnyAction} from 'redux';
 import {TCharacter, TPlanet} from '../models/star-wars-api.models';
 import {REDUX_EXAMPLE_ON_REQUEST_DATA, REDUX_EXAMPLE_ON_SUCCESS_DATA, TReduxExampleAction} from '../actions/redux-example.actions';
 
-export type TReduxExampleState = {
-	payload: TPlanet<TCharacter>;
-	isPending: boolean;
-};
+export type TReduxExampleState = {payload: TPlanet<TCharacter>; isPending: boolean};
 
 export const REDUX_EXAMPLE_INITIAL_STATE: TReduxExampleState = {
 	payload: {

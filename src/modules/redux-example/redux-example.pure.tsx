@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {PureComponent} from 'react';
-import {TCharacter, TPlanet} from '../../models';
+import {TCharacter, TPlanet} from '../../models/star-wars-api.models';
 
 export type TReduxExampleData = {
 	payload: TPlanet<TCharacter>;

@@ -22,5 +22,5 @@ const render = (Container: typeof RootContainer) => {
 render(RootContainer);
 
 if (module.hot) {
-	module.hot.accept(() => render(require('./modules/root'))); // tslint:disable-line
+	module.hot.accept(() => render(require('./modules/root/root.component'))); // tslint:disable-line
 }

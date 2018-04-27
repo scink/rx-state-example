@@ -3,9 +3,9 @@ import {PureComponent} from 'react';
 import {History} from 'history';
 import {Root} from './root.component';
 import {Router, withRouter} from 'react-router';
-import {TRootState} from '../../reducers';
 import {AnyAction, Store} from 'redux';
 import {Provider} from 'react-redux';
+import {TRootState} from '../../reducers/root.reducer';
 
 export type TRootContainerProps = {
 	store: Store<TRootState, AnyAction>;

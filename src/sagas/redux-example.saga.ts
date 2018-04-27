@@ -9,6 +9,7 @@ function* handleReduxExampleRequest() {
 	const {residents: persons} = result;
 	const requestRersidents = persons.map((person: string) => call(getPerson, person));
 	const residents = yield requestRersidents;
+
 	yield put(
 		reduxExampleOnSuccessDataAction({
 			...result,
