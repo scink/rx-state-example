@@ -7,9 +7,6 @@ export class Index extends Component<{}> {
 		return (
 			<>
 				<div>
-					<Link to={'/redux-example'}>redux-example</Link>
-				</div>
-				<div>
 					<Link to={'/first-rx'}>first-rx</Link>
 				</div>
 				<div>
