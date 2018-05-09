@@ -7,9 +7,9 @@ import 'rxjs/add/operator/subscribeOn';
 import hoistNonReactStatics from 'hoist-non-react-statics';
 
 export type ComponentDecorator<P> = (Target: ComponentType<P>) => ComponentClass<P>;
-export type WithRXSelector<P, S = never> = (props$: Observable<Readonly<P>>) => Observable<Partial<Readonly<P>>>;
+export type WithRXSelector<P> = (props$: Observable<Readonly<P>>) => Observable<Partial<Readonly<P>>>;
 
-export function withRX<P extends object = never, S = never>(select: WithRXSelector<P, S>): ComponentDecorator<P> {
+export function withRX<P extends object = never, S = never>(select: WithRXSelector<P>): ComponentDecorator<P> {
 	return Target => {
 		class WithRX extends Component<P> {
 			static displayName = `WithRX(${Target.displayName || Target.name})`;

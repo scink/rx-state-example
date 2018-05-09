@@ -12,6 +12,9 @@ export class Index extends Component<{}> {
 				<div>
 					<Link to={'/rx-example'}>rx-example</Link>
 				</div>
+				<div>
+					<Link to={'/binded'}>binded</Link>
+				</div>
 			</>
 		);
 	}

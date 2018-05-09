@@ -19,5 +19,8 @@ export namespace FirstRxService {
 		url: string;
 	};
 
-	export const getData: Observable<Response> = ajax({url: 'https://swapi.co/api/planets/1/'}).map(res => res.response);
+	const url = 'https://swapi.co/api/planets/1/';
+	export const getData: Observable<Response> = ajax(url)
+		.map(res => res.response)
+		.shareReplay(1);
 }
