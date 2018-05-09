@@ -19,7 +19,9 @@ export class ItemsContainer extends PureComponent {
 	items$?: Subscription;
 
 	componentDidMount() {
-		this.items$ = getItems.subscribeOn(animationFrame).subscribe(items => this.setState({items}));
+		this.items$ = getItems.subscribeOn(animationFrame).subscribe(items => {
+			this.setState({items});
+		});
 	}
 
 	componentWillUnmount() {
