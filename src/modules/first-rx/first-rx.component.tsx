@@ -3,8 +3,8 @@ import {PureComponent} from 'react';
 import Spin from 'antd/lib/spin';
 
 export type TFirstRxData = {
-	name: string;
-	diameter: string;
+	planetName: string;
+	planetDiameter: string;
 };
 
 export type TFirstRxProps = {
@@ -21,8 +21,8 @@ export class FirstRx extends PureComponent<TFirstRxProps> {
 
 		return (
 			<div>
-				<p>Name: {data.name}</p>
-				<p>Diameter: {data.diameter}</p>
+				<p>Name: {data.planetName}</p>
+				<p>Diameter: {data.planetDiameter}</p>
 			</div>
 		);
 	}

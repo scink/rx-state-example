@@ -1,27 +1,27 @@
 import * as React from 'react';
 import {PureComponent} from 'react';
 import {Subscription} from 'rxjs/Subscription';
-import {FirstRx, TFirstRxData} from './first-rx.component';
+import {FirstRx, TFirstRxProps} from './first-rx.component';
 import {FirstRxService} from '../../services/first-rx.service';
 import getData = FirstRxService.getData;
 
-export class FirstRxContainer extends PureComponent<{}, TFirstRxData> {
-	private data$?: Subscription;
+export class FirstRxContainer extends PureComponent<{}, TFirstRxProps> {
+	subscription$?: Subscription;
 
 	componentDidMount() {
-		this.data$ = getData
+		this.subscription$ = getData
 			.map(data => ({
-				name: data.name,
-				diameter: data.diameter,
+				planetName: data.name,
+				planetDiameter: data.diameter,
 			}))
-			.subscribe(data => this.setState(data));
+			.subscribe(data => this.setState({data}));
 	}
 
 	componentWillUnmount() {
-		this.data$ && this.data$.unsubscribe();
+		this.subscription$ && this.subscription$.unsubscribe();
 	}
 
 	public render() {
-		return <FirstRx data={this.state} />;
+		return <FirstRx {...this.state} />;
 	}
 }

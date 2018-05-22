@@ -10,8 +10,6 @@ export class Items extends PureComponent<TItemsProps> {
 	public render() {
 		const {items} = this.props;
 
-		return <List dataSource={items} renderItem={this.renderItem} bordered size={'large'} />;
+		return <List dataSource={items} renderItem={(item: string) => <List.Item>{item}</List.Item>} bordered size={'large'} />;
 	}
-
-	renderItem = (item: string) => <List.Item>{item}</List.Item>;
 }
