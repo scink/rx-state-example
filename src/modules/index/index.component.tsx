@@ -7,13 +7,13 @@ export class Index extends Component<{}> {
 		return (
 			<>
 				<div>
-					<Link to={'/first-example'}>first example</Link>
+					<Link to={'/first-example'}>Planet Info</Link>
 				</div>
 				{/*<div>*/}
 				{/*<Link to={'/rx-example'}>rx-example</Link>*/}
 				{/*</div>*/}
 				<div>
-					<Link to={'/second-example'}>second example</Link>
+					<Link to={'/second-example'}>Planets To Visit</Link>
 				</div>
 			</>
 		);

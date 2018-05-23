@@ -2,11 +2,11 @@ import * as React from 'react';
 import {PureComponent} from 'react';
 import List from 'antd/lib/list';
 
-export type TItemsProps = {
+export type TPlanetsListProps = {
 	items: string[];
 };
 
-export class Items extends PureComponent<TItemsProps> {
+export class PlanetsList extends PureComponent<TPlanetsListProps> {
 	public render() {
 		const {items} = this.props;
 

@@ -2,11 +2,11 @@ import * as React from 'react';
 import {PureComponent} from 'react';
 import Search from 'antd/lib/input/Search';
 
-export type TEnterProps = {
+export type TPlanetAdderProps = {
 	onClick: (value: string) => void;
 };
 
-export class Enter extends PureComponent<TEnterProps> {
+export class PlanetAdder extends PureComponent<TPlanetAdderProps> {
 	public render() {
 		const {onClick} = this.props;
 

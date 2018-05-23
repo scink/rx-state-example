@@ -4,12 +4,10 @@ import {Redirect, Route, RouteComponentProps, Switch} from 'react-router';
 import {css} from 'emotion';
 import {Index} from '../index/index.component';
 // import {TatooineContainer} from '../tatooine/tatooine.container';
-import {FirstRxContainer} from '../first-rx/first-rx.container';
-import {Binded} from '../binded/components/binded.pure';
+import {PlanetInfoContainer} from '../planet-info/planet-info.container';
+import {Binded} from '../planets-to-visit/components/planets-to-visit.pure';
 
 const RootStyle = css({
-	width: '100%',
-	maxWidth: 900,
 	marginLeft: 20,
 	marginRight: 20,
 	marginTop: 20,
@@ -22,7 +20,7 @@ export class Root extends Component<RouteComponentProps<{}>> {
 			<section className={RootStyle}>
 				<Switch>
 					<Route exact path={'/'} component={Index} />
-					<Route path={'/first-example'} component={FirstRxContainer} />
+					<Route path={'/first-example'} component={PlanetInfoContainer} />
 					{/*<Route path={'/first-rx'} component={TatooineContainer} />*/}
 					<Route path={'/second-example'} component={Binded} />
 
